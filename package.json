@@ -1,5 +1,5 @@
 {
-  "name": "@redux-offline/redux-offline",
+  "name": "@adbs1/redux-offline",
   "version": "2.6.0",
   "description": "Redux Offline-First Architecture",
   "main": "lib/index.js",
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redux-offline/redux-offline"
+    "url": "git+https://github.com/adbs1/redux-offline"
   },
   "author": "",
   "license": "MIT",
@@ -42,27 +42,27 @@
   },
   "homepage": "https://github.com/redux-offline/redux-offline#readme",
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.6",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
-    "@babel/plugin-transform-flow-strip-types": "^7.9.0",
-    "@babel/plugin-transform-runtime": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
+    "@babel/plugin-transform-flow-strip-types": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
-    "babel-jest": "^26.0.1",
-    "eslint": "^7.0.0",
-    "eslint-config-airbnb-base": "^14.1.0",
+    "babel-jest": "^26.1.0",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-flowtype": "^4.7.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "flow-bin": "^0.124.0",
     "husky": "^4.2.5",
-    "jest": "^26.0.1",
-    "lint-staged": "^10.2.2",
+    "jest": "^26.1.0",
+    "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
     "redux": "^4.0.5",
     "redux-devtools-instrument": "^1.9.6",
@@ -71,10 +71,11 @@
     "release": "^6.1.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.9.6",
+    "@babel/runtime": "^7.10.5",
     "redux-persist": "^4.6.0"
   },
   "peerDependencies": {
     "redux": ">=3"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/@adbs1" }
 }
