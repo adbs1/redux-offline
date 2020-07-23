@@ -5,7 +5,7 @@ The principle entrypoint to Redux Offline: returns a store enhancer.
 ```js
 import { createStore } from 'redux';
 import { offline } from '@redux-offline/redux-offline';
-import config from '@redux-offline/redux-offline/lib/defaults';
+import config from '@adbs1/redux-offline/lib/defaults';
 
 const store = createStore(myReducer, offline(config));
 ```

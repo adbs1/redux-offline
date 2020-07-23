@@ -17,7 +17,7 @@ npm install --save @redux-offline/redux-offline
 ```js
 import { createStore } from 'redux';
 import { offline } from '@redux-offline/redux-offline';
-import offlineConfig from '@redux-offline/redux-offline/lib/defaults';
+import offlineConfig from '@adbs1/redux-offline/lib/defaults';
 
 const store = createStore(reducer, offline(offlineConfig));
 ```

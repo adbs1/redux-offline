@@ -1241,7 +1241,7 @@
 
 "@redux-offline/redux-offline@latest":
   version "2.5.2"
-  resolved "https://registry.yarnpkg.com/@redux-offline/redux-offline/-/redux-offline-2.5.2.tgz#f310623271ac47ec324b91377e5a15daf958bf4d"
+  resolved "https://registry.yarnpkg.com/@adbs1/redux-offline/-/redux-offline-2.5.2.tgz#f310623271ac47ec324b91377e5a15daf958bf4d"
   integrity sha512-z/YJg/Ajr2bQXZUQZ5xlNixcG3d9AmH6MRQmYT/NxzPn7CI6bCfdrAd4BVzdUdqQ5ce7/CMftKXmNDlsjARdhA==
   dependencies:
     "@babel/runtime" "^7.5.5"
