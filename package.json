@@ -1,5 +1,5 @@
 {
-  "name": "@redux-offline/redux-offline",
+  "name": "@adbs1/redux-offline",
   "version": "2.6.0-native.0",
   "description": "Redux Offline-First Architecture",
   "main": "lib/index.js",
@@ -33,14 +33,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redux-offline/redux-offline"
+    "url": "git+https://github.com/adbs1/redux-offline"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/redux-offline/redux-offline/issues"
+    "url": "https://github.com/adbs1/redux-offline/issues"
   },
-  "homepage": "https://github.com/redux-offline/redux-offline#readme",
+  "homepage": "https://github.com/adbs1/redux-offline#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
@@ -76,5 +76,6 @@
   },
   "peerDependencies": {
     "redux": ">=3"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/@adbs1" }
 }
