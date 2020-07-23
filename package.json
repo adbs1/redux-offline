@@ -1,6 +1,6 @@
 {
   "name": "@adbs1/redux-offline",
-  "version": "2.6.0-native.1",
+  "version": "2.6.1",
   "description": "Redux Offline-First Architecture",
   "main": "lib/index.js",
   "types": "./typings.d.ts",
@@ -77,5 +77,7 @@
   "peerDependencies": {
     "redux": ">=3"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/@adbs1" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@adbs1"
+  }
 }
