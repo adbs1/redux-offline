@@ -10,6 +10,7 @@ declare module '@adbs1/redux-offline/lib/types' {
     meta: {
       completed: boolean;
       success: boolean;
+      transaction: number;
     };
     payload?: object;
     type: string;
