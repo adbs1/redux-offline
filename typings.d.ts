@@ -129,7 +129,7 @@ declare module '@adbs1/redux-offline/lib/constants' {
 declare module '@adbs1/redux-offline' {
   import { createStore as createReduxStore, Store, StoreEnhancer, Dispatch, Middleware } from 'redux';
 
-  import { Config } from '@redux-offline/redux-offline/lib/types';
+  import { Config } from '@adbs1/redux-offline/lib/types';
 
   export const offline: (userConfig: Partial<Config>) => (createStore: typeof createReduxStore) =>
     <T extends { [key: string]: any }>(
