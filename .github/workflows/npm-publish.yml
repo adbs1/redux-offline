@@ -22,8 +22,7 @@ jobs:
 #       - run: npm ci
 #       - run: npm test
 
-
-#     runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
