@@ -40,8 +40,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: 11bc9427-8d56-41b4-bbe8-488c58f5d3e1
-      - run: printenv
-      - run: cat /home/runner/work/_temp/.npmrc
 
 #  publish-gpr:
 #    needs: build
