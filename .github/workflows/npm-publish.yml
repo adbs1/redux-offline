@@ -31,10 +31,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-          registry-url: https://registry.npmjs.org/
+          registry-url: https://registry.npmjs.org/adbs1
       - run: npm ci
       #- run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
-      - run: echo "registry=https://registry.npmjs.org/ @adbs1:registry=https://npm.pkg.github.com/ //npm.pkg.github.com/:_authToken=11bc9427-8d56-41b4-bbe8-488c58f5d3e1" > ~/.npmrc
+      #- run: echo "registry=https://registry.npmjs.org/ @adbs1:registry=https://npm.pkg.github.com/ //npm.pkg.github.com/:_authToken=11bc9427-8d56-41b4-bbe8-488c58f5d3e1" > ~/.npmrc
 
       - run: npm publish --access public
         env:
