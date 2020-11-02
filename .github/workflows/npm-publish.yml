@@ -31,6 +31,8 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npm ci
       #- run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
+      - run: echo "registry=https://registry.npmjs.org/ @adbs1:registry=https://npm.pkg.github.com/ //npm.pkg.github.com/:_authToken=${NPM_AUTH_TOKEN}" > ~/.npmrc
+
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
@@ -45,7 +47,6 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
-      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
