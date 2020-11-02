@@ -4,9 +4,9 @@
 name: Node.js Package
 
 on:
-  branches:
-    - '*'
   release:
+    branches:
+      - '*'
     types: [created]
 
 jobs:
