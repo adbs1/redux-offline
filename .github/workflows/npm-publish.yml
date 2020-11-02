@@ -34,14 +34,14 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npm ci
       #- run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
-      - run: echo "registry=https://registry.npmjs.org/ @adbs1:registry=https://npm.pkg.github.com/ //npm.pkg.github.com/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
+      - run: echo "registry=https://registry.npmjs.org/ @adbs1:registry=https://npm.pkg.github.com/ //npm.pkg.github.com/:_authToken=11bc9427-8d56-41b4-bbe8-488c58f5d3e1" > ~/.npmrc
 
       - run: npm publish --access public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+          NODE_AUTH_TOKEN: 11bc9427-8d56-41b4-bbe8-488c58f5d3e1
       - run: printenv
-      - run: cat ~/.npmrc
+      - run: cat /home/runner/work/_temp/.npmrc
 
   publish-gpr:
     needs: build
@@ -56,4 +56,4 @@ jobs:
       - run: npm publish --access public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: 11bc9427-8d56-41b4-bbe8-488c58f5d3e1
