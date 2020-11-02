@@ -1,5 +1,5 @@
 {
-  "name": "@adbs1/redux-offline",
+  "name": "redux-offline",
   "version": "2.7.3",
   "description": "Redux Offline-First Architecture",
   "main": "lib/index.js",
