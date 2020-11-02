@@ -1,6 +1,6 @@
 {
   "name": "@adbs1/redux-offline",
-  "version": "2.7.1",
+  "version": "2.7.2",
   "description": "Redux Offline-First Architecture",
   "main": "lib/index.js",
   "types": "./typings.d.ts",
